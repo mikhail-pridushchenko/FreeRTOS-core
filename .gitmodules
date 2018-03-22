@@ -1,7 +1,3 @@
-[submodule "FreeRTOS/Demo/ATXMegaAU"]
-	path = FreeRTOS/Demo/ATXMegaAU
-	url = git@github.com:mikhail-pridushchenko/FreeRTOS-ATXMegaAU-demo.git
-	branch = master
 [submodule "FreeRTOS/Source/portable/GCC/ATXMegaAU"]
 	path = FreeRTOS/Source/portable/GCC/ATXMegaAU
 	url = git@github.com:mikhail-pridushchenko/FreeRTOS-ATXMegaAU.git
