@@ -66,7 +66,7 @@
 /* Message buffers are built onto of stream buffers. */
 #include "stream_buffer.h"
 
-#if defined( __cplusplus )
+#ifdef __cplusplus
 extern "C" {
 #endif
 
@@ -131,6 +131,7 @@ const size_t xMessageBufferSizeBytes = 100;
     {
         // The message buffer was created successfully and can now be used.
     }
+}
 
 </pre>
  * \defgroup xMessageBufferCreate xMessageBufferCreate
@@ -773,7 +774,7 @@ BaseType_t xMessageBufferReceiveCompletedFromISR( MessageBufferHandle_t xStreamB
  */
 #define xMessageBufferReceiveCompletedFromISR( xMessageBuffer, pxHigherPriorityTaskWoken ) xStreamBufferReceiveCompletedFromISR( ( StreamBufferHandle_t ) xMessageBuffer, pxHigherPriorityTaskWoken )
 
-#if defined( __cplusplus )
+#ifdef __cplusplus
 } /* extern "C" */
 #endif
 
